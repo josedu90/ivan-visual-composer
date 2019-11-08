@@ -1,0 +1,61 @@
+.ivan-carousel-preview {
+	display: none;
+}
+
+body.compose-mode {
+	.ivan-carousel-preview {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		background-color: #F9B418;
+
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		z-index: 1000;
+		font-size: 13px;
+
+		&.vc-empty-element {
+			display: none !important;
+		}
+
+		a {
+			display: inline-block;
+			padding: 0 5px;
+			color: #fff;
+
+			&:hover {
+				color: #916707;
+			}
+		}
+	}
+
+	.owl-item .vc-vc_row_inner {
+		padding-top: 0 !important;
+	}
+
+}
+
+//*
+//* NOTICE: this don't work well yet in the editor, must check a few details...
+//*
+
+//@media (min-width: 480px) {
+	//body.view-mode {
+		
+		//.composer-v-center > .wpb_row {
+
+			//display: table;
+			//height: 100%;
+
+			//.vc-vc_column_inner {
+				//display: table-cell !important;
+				//vertical-align: middle;
+				//float: none !important;
+			//}
+
+		//}
+	//}
+//}
